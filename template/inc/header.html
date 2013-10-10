@@ -1,0 +1,765 @@
+<!DOCTYPE HTML>
+<html{if $now eq "index"} class="mbg"{/if}><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{if $seo_title neq ''}{$seo_pre}{$seo_title}{else}亨氏（中国）官方网站{/if}</title>
+<meta name="description" content="{if $seo_description neq ''}{$seo_description}{else}亨氏（中国）官方网站，在您身边的婴儿营养专家。在线了解并购买亨氏奶粉、亨氏米粉、亨氏牛初乳等婴幼儿奶粉及辅食产品。{/if}"/>
+<meta name="keywords" content="{if $seo_keywords neq ''}{$seo_keywords}{else}亨氏，亨氏商城，亨氏奶粉，亨氏米粉，亨氏牛初乳，亨氏果汁泥，亨氏面条，heinz，奶粉，米粉，牛初乳，辅食，果汁泥，瓶装，亨氏活动，亨氏广告，亨氏网购，亨氏妈妈会，亨氏论坛，亨氏社区，专家在线，宝宝秀{/if}"/>
+<link href="{$public}/css/main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+html { /*filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);*/}
+</style>
+<!--[if IE]><script src="{$public}/js/html5.js"></script><![endif]-->
+<!--[if IE 6]>
+<script type="text/javascript" src="{$public}/js/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<script type="text/javascript" src="{$public}/js/jquery-1.7.2.min.js"></script>
+<script src="{$public}/Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript" src="{$public}/js/share.js"></script>
+<style type="text/css">
+  body{ overflow-x:hidden;}
+</style>
+<script type="text/javascript">
+  var _smq = _smq || [];
+  _smq.push(['_setAccount', 'AFC274A2', new Date()]);
+  _smq.push(['_setDirectoryIndex', '']);
+  _smq.push(['_setClickTimeOut', 200]);
+  _smq.push(['pageview']);
+
+ (function() {
+  var startTime = +(new Date());
+  _smq.push(function() {
+  _smq.push(['custom', 'loadtime', 'micro', 'second', +(new Date()) - startTime, 1]);
+  }); 
+  })();
+  
+  (function() {
+  var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+  sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/sm.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+  })();
+</script>
+</head>
+<body{if $now neq "index"} class="bnhsbg"{/if}>
+<!--头部 s-->
+<header class="header">
+
+
+<!--亨氏辅食下拉菜单s-->
+
+<div class="sup_div hide">
+   <div class="sup_lmenu">
+      <ul>
+         <li><a href="{$mysite}/fushi/all/" class="on">辅食产品</a>
+            <div class="sl_menu hide">
+              <a href="{$mysite}/fushi/mifen.html">亨氏米粉</a>
+               	<a href="{$mysite}/fushi/all/c/21.html" class="m30">米粉产品</a>
+			  <a href="{$mysite}/fushi/all/c/23.html">佐餐泥</a>
+			  <a href="{$mysite}/fushi/all/c/25.html">面条</a>
+			  <a href="{$mysite}/fushi/all/c/22.html">果汁</a>
+			  <a href="{$mysite}/fushi/all/c/24.html">营养补充品</a>
+			  <a href="{$mysite}/fushi/all/c/26.html">果汁泥</a>
+			  <a href="{$mysite}/fushi/all/c/27.html">磨牙棒</a>		  
+            </div>
+         </li>
+         <li><a href="{$mysite}/fushi/check.html" {if $me eq "all"}class="check"{/if}>防伪查询</a></li>
+         <li><a href="{$mysite}/fushi/wdonline.html" {if $me eq "all"}class="wdonline"{/if}>在线问答</a></li>
+         <li><a href="{$mysite}/fushi/fstryeat.html">产品试用</a>
+         	<div class="sl_menu hide">
+                <a href="{$mysite}/fushi/trying.html">正在试用</a>
+                <a href="{$mysite}/fushi/soontry.html">即将试用</a>
+                <a href="{$mysite}/fushi/lasttry.html">往期试用</a>
+                <a href="{$mysite}/fushi/tryreport.html">试用报告</a>
+                <a href="{$mysite}/fushi/tryguid.html">试用指南</a>
+            </div>
+         </li>
+         <li><a href="{$mysite}/fushi/expertsay.html">辅食添加</a>
+            <div class="sl_menu hide">
+              <a href="{$mysite}/fushi/expertsay.html">亨氏专家说</a>
+              <a href="{$mysite}/fushi/cookbook.html">宝宝菜谱</a>
+              <a href="{$mysite}/quanzi/index.html">论坛</a>
+            </div>
+         </li>
+      </ul>
+   </div>
+   <!--切换右边内容s-->
+   <div class="sup_r_div">
+       <dl class="s_r_txt">
+          <dt>
+            <a href="{$mysite}/fushi/mifen.html" id="top_fu_spa" target="_blank"><img width="140" height="109" id="top_fu_spimg" src="{$mysite}/template/public/images/header/亨氏米粉再升级.jpg" >亨氏米粉再升级 </a>
+          </dt>
+          <dd>
+             <h4><a href="{$mysite}/fushi/expertsay.html" class="right">查看更多&#8250;</a>喂哺知识</h4>
+             <ul>
+                <li><span class="right">2013.3.8</span><a href="{$mysite}/fushi/detail/id/108.html">辅食添加4步曲 科学强壮为宝宝</a></li>
+                <li><span class="right">2013.3.8</span><a href="{$mysite}/fushi/detail/id/106.html">辅食添加第三阶段：咀嚼能力的...</a></li>
+                <li><span class="right">2013.3.8</span><a href="{$mysite}/fushi/detail/id/105.html">辅食添加第二阶段：辅食种类的...</a></li>
+                <li><span class="right">2013.3.8</span><a href="{$mysite}/fushi/detail/id/104.html">辅食添加第一阶段：辅食的引入</a></li>
+				<!--<li><span class="right">2013.3.27</span><a href="#">辅食添加注意事项</a></li>-->
+             </ul>
+          </dd>
+       </dl>
+       
+   </div>
+   <!--切换右边内容e-->
+   <!--浏览记录s-->
+   <div class="lljl_div hide">
+       <a href="#" class="prebtn"></a>
+       <a href="#" class="nextbtn"></a>
+       <h5>浏览记录</h5>
+       <ul>
+          <li><img src="{$public}/images/pcbg/ti01_03.jpg" width="67" height="60">
+              <p>亨氏超金康儿高婴<br />
+儿配方奶粉900g </p>
+          </li>
+          <li><img src="{$public}/images/pcbg/ti01_03.jpg" width="67" height="60">
+              <p>亨氏超金康儿高婴<br />
+儿配方奶粉900g </p>
+          </li>
+          <li><img src="{$public}/images/pcbg/ti01_03.jpg" width="67" height="60">
+              <p>亨氏超金康儿高婴<br />
+儿配方奶粉900g </p>
+          </li>
+       </ul>
+   </div>
+   <!--浏览记录e-->
+</div>
+<!--亨氏辅食e-->
+
+
+
+<!--亨氏奶粉下拉菜单s-->
+<div class="sup_div  hide">
+   <div class="sup_lmenu">
+      <ul>
+         <li><a href="{$mysite}/naifen/advantage.html" {if $me eq 'advantage'}class="on2"{/if}>五大优势</a></li>
+         <li><a href="{$mysite}/naifen/ppxx.html">品牌信息</a>
+            <div class="sl_menu hide">
+              <a href="{$mysite}/naifen/video.html" {if $me eq 'video'}class="on2"{/if}>亨氏视频</a>
+              <a href="{$mysite}/naifen/jkbd.html">进口奶粉必读</a>
+              <a href="{$mysite}/naifen/qa.html">奶粉知多少</a>
+              <a href="{$mysite}/naifen/expert_ft.html">亨氏专家访谈</a>
+              <a href="{$mysite}/naifen/tryreport.html">试用心得</a>
+            </div>
+         </li>
+       <li><a href="{$mysite}/naifen/all.html" {if $me eq 'all'}class="on2"{/if}>全线产品</a></li>
+         <li><a href="{$mysite}/naifen/check.html" {if $me eq 'check'}class="on2"{/if}>防伪查询</a></li>
+         <li><a href="{$mysite}/naifen/wdonline.html">在线问答</a></li>
+         <li><a href="{$mysite}/naifen/parenting/c/11.html">孕妈妈指南</a>
+             <div class="sl_menu hide">
+              <a href="{$mysite}/naifen/parenting/c/11.html">营养膳食</a>
+              <a href="{$mysite}/naifen/parenting/c/12.html">孕母儿发育特征</a>
+              <a href="{$mysite}/naifen/parenting/c/13.html">常见疾病及防治</a>
+              <a href="{$mysite}/naifen/parenting/c/14.html">产前准备</a>
+            </div>
+         </li>
+         <li><a href="{$mysite}/naifen/parenting/c/21.html">宝宝良好开端</a>
+            <div class="sl_menu hide">
+              <a href="{$mysite}/naifen/parenting/c/21.html">营养</a>
+              <a href="{$mysite}/naifen/parenting/c/22.html">喂养</a>
+              <a href="{$mysite}/naifen/parenting/c/23.html">护理</a>
+              <a href="{$mysite}/naifen/parenting/c/24.html">防病</a>
+            </div>
+         </li>
+      </ul>
+   </div>
+   <!--切换右边内容s-->
+   <div class="sup_r_div">
+       <dl class="s_r_txt">
+          <dt><img id="top_milk_spimg"  width="140" height="109"  src="{$public}/images/header/亨氏奶粉.jpg">
+            <a href="{$mysite}/naifen/video.html#11" id='top_milk_spa'>好肠道 助成长</a>
+          </dt>
+          <dd>
+             <h4><a href="{$mysite}/naifen/parenting.html"  class="right">查看更多&#8250;</a>喂哺知识</h4>
+             <ul>
+                <li><span class="right">2013.1.28</span><a href="{$mysite}/naifen/detail/id/22.html">母乳喂养</a></li>
+                <li><span class="right">2013.1.28</span><a href="{$mysite}/naifen/detail/id/21.html">初乳的好处</a></li>
+                <li><span class="right">2013.1.28</span><a href="{$mysite}/naifen/detail/id/20.html">产后何时开奶</a></li>
+                <li><span class="right">2013.1.28</span><a href="{$mysite}/naifen/detail/id/19.html">蛋白质</a></li>
+             </ul>
+          </dd>
+       </dl>
+   </div>
+   <!--切换右边内容e-->
+   <!--浏览记录s-->
+   <div class="lljl_div hide">
+       <a href="#" class="prebtn"></a>
+       <a href="#" class="nextbtn"></a>
+       <h5>浏览记录</h5>
+       <ul>
+          <li><img src="{$public}/images/pcbg/ti01_03.jpg" width="67" height="60">
+              <p>亨氏超金康儿高婴<br />
+儿配方奶粉900g </p>
+          </li>
+          <li><img src="{$public}/images/pcbg/ti01_03.jpg" width="67" height="60">
+              <p>亨氏超金康儿高婴<br />
+儿配方奶粉900g </p>
+          </li>
+          <li><img src="{$public}/images/pcbg/ti01_03.jpg" width="67" height="60">
+              <p>亨氏超金康儿高婴<br />
+儿配方奶粉900g </p>
+          </li>
+       </ul>
+   </div>
+   <!--浏览记录e-->
+</div>
+<!--亨氏奶粉e-->
+<!--妈妈俱乐部下拉菜单s-->
+<div class="sup_div hide">
+   <div class="sup_lmenu">
+      <ul>
+         <li><a href="{$mysite}/club/gift.html">亨币专区</a>
+            <div class="sl_menu hide">
+               <a href="{$mysite}/club/gift.html">礼品兑换</a>
+               <a href="{$mysite}/club/hbuse.html">亨币使用指南</a>
+            </div>
+         </li>
+		<li><a href="{$mysite}/club/jply.html">社区奖品乐园</a></li>
+         <li><a href="{$mysite}/quanzi/index.html">亨妈讨论区</a>
+         </li>
+         <li><a href="{$mysite}/club/mmb.html">亨氏妈妈班</a></li>
+      </ul>
+   </div>
+   <!--切换右边内容 ... <a id="top_club_news"></a> s-->
+   <div class="sup_r_div"  id="vl">
+ <h3>妈妈班动态消息：<span id="marquee1" style="height:25px;"><a href='1'></a><a href='1'></a><a href='1'></a>
+        </span>
+</h3>
+      <dl class="s_r_txt" >
+          <dt  ><img   width="140" height="109"  id="top_club_spimg" src="{$mysite}/template/public/images/header/亨氏妈妈会.jpg">
+            <a href="{$mysite}/quanzi/index.html" id="top_club_spa">亨氏妈妈会</a>
+          </dt>
+          <dd >
+             <h4><a href="{$mysite}/quanzi/index.html" class="right">查看更多&#8250;</a>精华热贴</h4>
+             <ul>
+                <li><span class="right">2013.04.08 </span><a href="{$mysite}/quanzi/posts/a/1/id/131639.html">孕妈绝不能喝2种水</a></li>
+                <li><span class="right">2013.04.08 </span><a href="{$mysite}/quanzi/posts/a/1/id/131644.html">家常食物 缓解孕妈晨吐</a></li>
+                <li><span class="right">2013.04.07</span><a href="{$mysite}/quanzi/tq_posts/gid/3931/id/131690.html">智力成长，让你的孩子赢在...</a></li>
+				<li><span class="right">2013.02.27</span><a href="{$mysite}/quanzi/posts/a/1/id/131289.html">宝宝磨牙食谱大全</a></li>
+             </ul>
+          </dd>
+      </dl>
+   </div>
+
+<!--切换右边内容e-->
+</div>
+<!--妈妈俱乐部e-->
+
+<!--百年亨氏下拉菜单s-->
+<div class="sup_div hide">
+   <div class="sup_lmenu">
+      <ul>
+         <li><a href="{$mysite}/about/story.html" {if $cid eq "10"}class="on2"{/if}>品牌故事</a></li>
+         <li><a href="{$mysite}/about/abus.html">公司概览</a>
+             <div class="sl_menu hide">
+              <a href="{$mysite}/about/abus.html">亨氏介绍</a>
+              <a href="{$mysite}/about/honor.html">亨氏荣誉</a>
+            </div>
+         </li>
+         <li><a href="{$mysite}/about/news.html" {if ($cid eq "31") or ($cid eq "32") or ($cid eq "33")}class="on2"{/if}>亨氏新闻</a>
+            <div class="sl_menu hide">
+                  <a href="{$mysite}/about/news.html">最新资讯</a>
+                  <a href="{$mysite}/about/loveaction.html">爱心行动</a>
+                  <a href="{$mysite}/about/activity.html">精彩活动</a>
+            </div> 
+         </li>
+         <li><a href="{$mysite}/about/globals.html" {if $cid eq "40"}class="on2"{/if}>全球动态</a></li>
+         <li><a href="{$mysite}/about/hins.html" {if $cid eq "50"}class="on2"{/if}>HINS研究所</a></li>
+         <li><a href="{$mysite}/about/joinus.html">加入我们</a></li>
+      </ul>
+   </div>
+   <!--切换右边内容s-->
+   <div class="sup_r_div">
+       <dl class="s_r_txt">
+          <dt id='top_about_dt'>
+				  <img id="top_about_spimg"  width="140" height="109" src="{$public}/images/header/品牌故事.jpg" style="cursor:pointer">
+				  <a id="top_about_spa" href="{$mysite}/about/story.html">品牌故事</a>
+		</dt>
+          <dd>
+             <h4><a href="{$public}/about/lists/c/31.html" class='right'>查看更多&#8250;</a>最新资讯</h4>
+             <ul id="top_about_ul"></ul>
+          </dd>
+       </dl>
+   </div>
+   <!--切换右边内容e-->
+</div>
+<!--百年亨氏e-->
+
+
+<!--官方授权网站下拉菜单s-->
+<div class="sup_div hide" id="officer">
+    <!--切换右边内容s-->
+    <ul>
+       <li><a target="_blank" href="http://shop.heinz.com.cn/" onclick="_smq.push(['custom', '025', 'e1']);"><span><img src="{$public}/images/sup/lg1_03.jpg" width="69" height="38" alt="亨氏官方商城" align="absmiddle" onclick="idgTracker._trackEvent('click', '003', '003_官方授权网店');"></span>亨氏官方商城</a></li>
+       <li><a target="_blank" href="http://heinz.tmall.com/" onclick="_smq.push(['custom', '026', 'e2']);"><span><img src="{$public}/images/sup/lg2_03.jpg" alt="天猫商城" align="absmiddle" ></span>天猫商城</a></li>
+	   <li><a target="_blank" href="http://www.amazon.cn/s?ie=UTF8&page=1&rh=n%3A2134727051%2Cp_4%3AHeinz%20%E4%BA%A8%E6%B0%8F#/ref=sr_ex_n_1?rh=n%3A42692071%2Cn%3A%2142693071%2Cn%3A80679071%2Cp_4%3AHeinz+%E4%BA%A8%E6%B0%8F&bbn=80679071&ie=UTF8&qid=1365322676" onclick="_smq.push(['custom', '027', 'e3']);"><span><img src="{$public}/images/sup/lg6_03.jpg" alt="亚马逊" align="absmiddle" ></span>亚马逊</a></li>
+       <li><a target="_blank" href="http://jmall.jd.com/shop/heinz/index.html" onclick="_smq.push(['custom', '028', 'e4']);"><span><img src="{$public}/images/sup/lg3_03.jpg" alt="京东商城" align="absmiddle" ></span>京东商城</a></li>
+       <li><a target="_blank" href="http://shop.dangdang.com/brand/Heinz" onclick="_smq.push(['custom', '029', 'e5']);"><span><img src="{$public}/images/sup/lg4_03.jpg" alt="当当网" align="absmiddle" ></span>当当网</a></li>
+       <li><a target="_blank" href="http://search.yihaodian.com/s2/c0-0/k亨氏/20" onclick="_smq.push(['custom', '030', 'e6']);"><span><img src="{$public}/images/sup/lg5_03.jpg" alt="1号店" align="absmiddle" ></span>1号店</a></li>
+       <li class="last"><a target="_blank" href="http://search.suning.com/emall/search.do?keyword=%E4%BA%A8%E6%B0%8F&cityId=9173"  onClick="_smq.push(['custom', '031', 'e7']);"><span><img src="{$public}/images/sup/lg7_03.jpg" alt="红孩子" align="absmiddle" ></span>红孩子</a></li>
+    </ul>
+    <!--切换右边内容e-->
+</div>
+ <!--官方授权网站e-->
+   <a href='{$mysite}' title="亨氏官网"><h1>亨氏官网</h1></a>
+   <!--登录前 s-->
+   <div class="login_box hide">
+       <a href="#" class="hd_btn"></a>
+       <table class="login_tab" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="57" align="right">帐   号：</td>
+    <td><input name="" type="text" class="lg_int"  id="username" ></td>
+  </tr>
+  <tr>
+    <td align="right">密   码：</td>
+    <td><input name="" type="password" class="lg_int" id="password"></td>
+  </tr>
+     <tr>
+    <td colspan="2" class="sns_login">使用已有账户登录：<a href="http://heinztest13.heinz.com.cn/qq/qqback"><img src="{$public}/images/mpbg/i3_03.jpg" width="16" height="16" align="absmiddle"></a><!--<a href="#"><img src="{$public}/images/mpbg/i2_03.jpg" width="16" height="16" align="absmiddle"></a>--></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0);" class="log_btn" id="login_now">立即登录</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input name="" type="checkbox" value="1" class="lg_int2" id="jzmm_checkbox">
+      记住密码 <a href="{$mysite}/user/forgetpass" class="red">找回密码?</a></td>
+  </tr>
+</table>
+
+   </div>
+   <div class="top_menu" id='tmenu1'><span class="t_gonggao"><a href="http://www.heinz.com.cn/about/news.html" target="_blank" id="qy_gonggao">企业公告&nbsp;&nbsp;&nbsp;&nbsp;</a></span><span class="t_sina"><a href="http://e.weibo.com/heinzchina?ref=http%3A%2F%2Fwww.heinz.com.cn%2F" target="_blank" onclick="_smq.push(['custom', '001', 'weibo']); idgTracker._trackEvent('click', '001', '001_关注亨氏新浪微博');" >关注亨氏新浪微博</a></span>|<a href="javascript:;" class="login_btn" onclick="idgTracker._trackEvent('click', '002', '002_登录'); _smq.push(['custom', '002', 'login']);
+ ">登录</a><a href="{$mysite}/user/reg.html" class="reg_btn">注册</a></div>
+   <!--登录前 e-->
+ <!--登录后 s
+  <div class="top_menu hide" id="tmenu2"><span class="t_sina"><a href="http://e.weibo.com/heinzchina?ref=http%3A%2F%2Fwww.heinz.com.cn%2F" target="_blank" onclick="_smq.push(['custom', '001', 'weibo']);">关注亨氏新浪微博</a></span>|<span class="kf" id="uname"></span>，积分：<span class="ylow" id="uscore">1095</span><a href="{$mysite}/mycenter/index.html" class="grzx_btn" title="个人中心" id="grzx_btn">个人中心</a><a href="javascript:;" id="logout">退出</a></div>-->
+  
+  <div class="top_menu hide"  id="tmenu2"><span class="t_gonggao"><a href="http://www.heinz.com.cn/about/news.html" target="_blank" id="qy_gonggao">企业公告&nbsp;&nbsp;&nbsp;&nbsp;</a></span><span class="t_sina"><a href="http://e.weibo.com/heinzchina?ref=http%3A%2F%2Fwww.heinz.com.cn%2F"  target="_blank" onclick="_smq.push(['custom', '001', 'weibo']);">关注亨氏新浪微博</a></span>|&nbsp;&nbsp;<img id='uhead' src="{$public}/images/icon_06_03.jpg" width="27" height="27" align="absmiddle" ><span class="kf" id="uname"></span>，&nbsp;欢迎回到亨氏官网。积分：<span class="ylow" id="uscore"></span><a href="{$mysite}/mycenter/index.html" class="grzx_btn" title="个人中心" id="grzx_btn">个人中心</a><a href="javascript:;" id="logout">退出</a></div>
+
+   <!--登录后 e-->
+   
+  <div class="nav" >
+  <ul>
+  <li id="list01"><a href="{$mysite}" title="首页" {if $now eq "index"}class="on"{/if} >&nbsp;首   &nbsp;页</a></li>
+  <li><a href="{$mysite}/fushi/" {if $now eq "fushi"}class="on"{/if} title="亨氏辅食" id="zh_fushi">亨氏辅食</a></li>
+  <li><a href="{$mysite}/naifen/" {if $now eq "naifen"}class="on"{/if} title="亨氏奶粉" id="zh_naifen">亨氏奶粉</a></li>
+  <li><a href="{$mysite}/club/" title="妈妈俱乐部" {if $now eq "club"}class="on"{/if} id="zh_julebu">妈妈俱乐部</a></li>
+  <li><a href="{$mysite}/about/" title="百年亨氏" {if $now eq "about"}class="on"{/if} id="zh_bnheinz">百年亨氏</a></li>
+  <li><a href="http://shop.heinz.com.cn" title="官方授权网店" class="sc" onclick="idgTracker._trackEvent('click', '003', '003_官方授权网店'); 
+">官方授权网店</a>
+  </ul>
+  </div>
+
+
+
+
+</header>
+
+<script language='javascript'>	
+var thistypaae=0;	
+$(document).ready(function(){
+
+	$(".sup_div").hide();
+	
+	//主导航栏的效果
+	
+	var thisnow="{$now}";
+
+	if(thisnow.indexOf("index")>=0)
+	{
+		thistypaae=0;
+	}
+		if(thisnow.indexOf("fushi")>=0)
+	{
+		thistypaae=1;
+	}
+			if(thisnow.indexOf("naifen")>=0)
+	{
+		thistypaae=2;
+	}
+
+		if(thisnow.indexOf("club")>=0)
+	{
+		thistypaae=3;
+	}
+
+		if(thisnow.indexOf("about")>=0)
+	{
+		thistypaae=4;
+	}
+
+	$(".nav a").each(function(i){
+		$(this).mouseenter(function(){
+				if(i>=0)
+				{
+					$(".sup_div").hide();
+					$($(".sup_div")[i-1]).show();
+				}
+
+				if((i!=5)&&(i!=thistypaae))
+				{
+					dht_csh();
+					$(this).css("color","#e81e12");
+					$(this).css("background","url({$public}/images/line.png)  no-repeat -1px bottom");
+				}
+				if((i==5)||(i==thistypaae))
+				{
+					dht_csh();
+				}
+			});
+		});	
+  	});
+	
+	
+	function dht_csh()
+	{	
+		$(".nav a").each(function(i){
+			if((i!=5)&&(i!=thistypaae))
+			{
+				$(this).css("color","#7b6200");
+				$(this).css("background","url({$public}/images/jt_icon_03.jpg) no-repeat 15px center");
+			}
+		});	
+	}
+	
+	$(".sup_div a").removeClass("on");
+	$(".sup_div a").mouseover(function(){
+		$(".sup_div a").removeClass("on");
+		$(this).addClass("on");
+	});
+	
+	var head_quan = "";//默认
+	$(document).ready(function(){
+	$(".sup_div").mouseenter(function() {
+
+		head_quan = "x";//向下
+	 });
+	 
+	 $(".sup_div").mouseleave(function() {
+		head_quan = "s";//向外，等于上隐藏
+		setTimeout("tophide()", 300);
+	 });
+	 
+	 $(".top_menu").mouseenter(function() {
+		head_quan = "s";//向上
+	 });
+
+	$(".nav a").mouseenter(function(){
+		head_quan = "m";//默认
+	});	
+		
+	$(".nav a").mouseleave(function(){
+		setTimeout("tophide()", 300);
+	});
+	
+	$("#FlashID").mouseenter(function(){
+		head_quan = "s";//向上
+	});
+	
+	$("#head_span_z").mouseenter(function(){
+		dht_csh();
+		$(".sup_div").hide();
+	});
+	$("#head_span_s").mouseenter(function(){
+		dht_csh();
+		$(".sup_div").hide();
+	});
+	$("#head_span_y").mouseenter(function(){
+		dht_csh();
+		$(".sup_div").hide();
+	});
+	
+
+	
+		
+    //栏目的子栏目的显示和隐藏
+    $('.sup_div li')
+    .mouseenter(function(e) {
+        var $elm = $(this);
+        $elm.data('mouseover', true); 
+        setTimeout(function(){ if($elm.data('mouseover'))$elm.children('div.sl_menu:hidden').slideDown(); },100); 
+    })
+    .mouseleave(function(e) {
+        var $elm = $(this);
+        $elm.data('mouseover', false);
+        $elm.children('div.sl_menu:visible').slideUp();
+    })	
+	
+	
+	
+	//移动到marquee1的时候
+    $('#marquee1')
+	.mouseenter(function(e) {
+			$($(".sup_div")[2]).show(); 
+    })
+    .mouseleave(function(e) {
+
+			$($(".sup_div")[2]).show();
+    })	
+	.mousemove(function(e) {
+
+			$($(".sup_div")[2]).show();
+    })	
+	
+	$($(".sup_div")[2]).mousemove(function(e) {
+
+			$($(".sup_div")[2]).show();
+    })	
+	
+    $('#marquee1 a')
+	.mouseenter(function(e) {
+			head_quan == "x";
+    })
+    .mouseleave(function(e) {
+			head_quan == "x";
+    })	
+	.mousemove(function(e) {
+			head_quan == "x";
+    })	
+
+});
+function tophide() {
+   if (head_quan == "s") {
+      $(".sup_div").hide();
+	  dht_csh();
+   }
+}
+	
+
+
+	//登录动作,点击展开登陆框
+		$(".login_btn").click(function(){
+				$('#officer').hide();
+				$('.login_box').show();
+				
+
+		});
+		
+		$(".login_btn").mouseleave(function(){
+			$('#officer').hide();
+			
+		});
+//回车提交登陆			
+$(document).ready(function(){
+			document.onkeydown = function() {
+			if(event.keyCode==13){
+				if($('.login_box').css("display")=="block")
+				{
+					$("#login_now").click();
+				}
+			}
+	};
+});
+
+	//提交登录动作
+	$("#login_now").click(function(){
+		var username = $.trim($("#username").val());
+		var password = $.trim($("#password").val());
+									
+		if(username==''){
+			alert("请输入用户名！");
+		}
+		else if(password==''){
+			alert("请输入密码！");
+		}
+		else{
+			$("#login_now").html("正在登录..");
+			$("#login_now").attr("disabled","true");
+			$.ajax({
+				type:"POST",
+				url:"{$mysite}/user/login",
+				data:"username="+username+"&password="+password,
+				dataType:"json",
+				success: function(data){
+					if(data.tag=="0"){
+						alert(data.msg);
+					}
+					else{
+						jzmm(username,password);
+						$(".login_box").hide();
+						$("#tmenu1").hide();
+						$("#tmenu2").show();
+
+						$("#uname").html(data.username);
+						$("#uscore").html(data.score);
+						$("#uhead").attr("src","{if $uface neq ''}{$uface}{else}{$public}/images/icon_06_03.jpg{/if}");
+						$("#grzx_btn").attr("href","{$mysite}/mycenter/index.html");//个人中心地址
+						window.location.reload();
+						
+					}
+				}
+			});	
+		}
+	});
+	//处理记住密码
+	function jzmm(a,b)
+	{
+		if($("#jzmm_checkbox").attr("checked")!="checked")
+		{
+			a="";
+			b="";
+		}
+		
+		$.ajax({
+				type:"POST",
+				url:"{$mysite}/header/jzmm",
+				data:"u="+a+"&p="+b,
+				success: function(data){
+			}
+		});	
+			
+	}
+	//加载记住密码
+	$(function($){
+			$.ajax({
+				type:"POST",
+				url:"{$mysite}/header/pdjzmm",
+				data:"u=1",
+				dataType:"json",
+				success: function(data){
+				$("#username").val(data.u);
+				$("#password").val(data.p);
+				
+				if(data.u!="")
+				{
+					$("#jzmm_checkbox").attr("checked","checked");
+				}
+			}
+		});	
+	});
+
+	//判断是否登录
+	$(function($){
+		var islogin = "{$islogin}";
+		if(islogin=="1"){
+				$(".login_box").hide();
+				$("#tmenu1").hide();
+				$("#tmenu2").show();
+				//alert("{$username}");
+				$("#uname").html("{$username}");
+				$("#uscore").html("{$score}");
+				$("#uhead").attr("src","{if $uface neq ''}{$uface}{else}{$public}/images/icon_06_03.jpg{/if}");
+				$("#grzx_btn").attr("href","{$mysite}/mycenter/index.html");//个人中心地址	
+		}
+	});
+	//退出动作
+		$("#logout").click(function(){
+
+		$.ajax({
+			type:"POST",
+			url:"{$mysite}/user/logout",
+			success:function(data){
+				if(data=="1"){
+					$("#tmenu1").show();
+					$("#tmenu2").hide();
+					
+					if($("#jzmm_checkbox").attr("checked")!="checked")
+					{
+						$("#username").val("");
+						$("#password").val("");
+					}
+					
+					window.location.reload();
+				}
+			}
+		});
+	});
+	
+var mytime="{$mytime}";
+var mysite="{$mysite}";
+var islogin="{$islogin}";
+
+
+	//加载数据
+	$(document).ready(function(){			
+			$.getJSON(mysite+"/header/naifen", {}, function(json) {
+				//$("#top_milk_spa").attr("href",mysite+"/naifen/video.html#"+json.id);
+				//$("#top_milk_spa").html(json.title);
+				
+				//$("#top_milk_spimg").attr("src",json.pic);
+				$("#top_milk_spimg").attr("style","cursor:pointer");
+				$("#top_milk_spimg").click(function(){
+					location.href=$("#top_milk_spa").attr("href");
+				});
+       		});//俱乐部
+
+			$.getJSON(mysite+"/yuer/hsmmb", {}, function(json) {
+
+				var str = "";
+				var i=0;
+				for (var one in json)
+				{	
+					//alert(json[one]["content"]);
+					$($("#marquee1 a")[i]).html(json[one]["content"]);
+					$($("#marquee1 a")[i]).attr("href",json[one]["url"]);
+					i=i+1;
+
+				}
+				$("#marquee1 a").hide();
+				$($("#marquee1 a")[0]).show();
+				marquee_Interval=setInterval("marquee_qiehuan()",3000);
+       		});
+			
+			$("#marquee1").mouseover(function(){
+				window.clearInterval(marquee_Interval);
+			});	
+			$("#marquee1").mouseout(function(){
+				marquee_Interval=setInterval("marquee_qiehuan()",3000);
+			});	
+			
+			
+			$("#top_club_spimg").attr("style","cursor:pointer");
+			$("#top_club_spimg").click(function(){
+				location.href=$("#top_club_spa").attr("href");
+			});
+
+			//亨氏中国
+			$.getJSON(mysite+"/header/about", {}, function(json) {
+				//$('#top_about_dt').html(json.a);
+				$('#top_about_ul').html(json.b);	
+				
+				$("#top_about_spimg").attr("style","cursor:pointer");
+				$("#top_about_spimg").click(function(){
+					location.href=$("#top_about_spa").attr("href");
+				});
+				
+				
+       		});
+			
+	});
+	var marquee_Interval;
+	var marquee_qiehuan_num=0;
+	function marquee_qiehuan()
+	{
+		marquee_qiehuan_num=marquee_qiehuan_num+1;
+		if(marquee_qiehuan_num>=3)
+		{
+			marquee_qiehuan_num=0;
+		}
+		$("#marquee1 a").hide();
+		$($("#marquee1 a")[marquee_qiehuan_num]).show();
+
+	}
+	
+	/*企业公告*/
+	$(function($){
+		$.ajax({
+			type:"POST",
+			url:"{$mysite}/index/ajax_qygonggao",
+			data:"",
+			success:function(datas){
+				if(datas!=''){
+					$("#qy_gonggao").attr("href",datas);	
+				}
+			}
+		});
+	});
+	
+</script>
+<script src='{$public}/js/header.js'></script>
+
+
+

@@ -1,0 +1,161 @@
+<!--登录浮层 s-->
+<div class="login_div hide " id="zh_login_1308">
+  <h3><a href="javascript:;" class="right" id="zh_login_close"></a>会员登录<span>(免费注册成为亨氏会员，立即参加活动，赢取积分。)</span></h3>
+  <!--<form action="{$mysite}/user/login3" method="post" name="form1" id="form1">-->
+   <table class="login_tab2" border="0" cellspacing="0" cellpadding="0">
+   <tr></tr>
+   <tr>
+     <td width="70" align="right">帐   号：</td>
+     <td><input name="username" id="zh_username" type="text" class="input01"></td>
+   </tr>
+   <tr>
+     <td width="70" align="right">密   码：</td>
+     <td><input name="password" id="zh_password" type="password" class="input01"></td>
+   </tr>
+   <tr>
+     <td width="70" align="right">验证码：</td>
+     <td><input name="vcode" id="zh_vcode" type="text" class="input02">&nbsp;&nbsp;<img src="{$mysite}/extends/ValidationCode.php" onclick="this.src='{$mysite}/extends/ValidationCode.php?t='+Math.random()" width="63" height="25" align="absmiddle" alt="看不清楚，点击刷新验证码" title="看不清楚，点击刷新验证码" style="cursor:pointer">
+      </td>
+   </tr>
+   <tr>
+    <td colspan="2" class="sns_login">使用已有账户登录：<a href="http://heinztest13.heinz.com.cn/qq/qqback"><img src="{$public}/images/mpbg/i3_03.jpg" width="16" height="16" align="absmiddle"></a><!--<a href="#"><img src="{$public}/images/mpbg/i2_03.jpg" width="16" height="16" align="absmiddle"></a>--></td>
+    </tr>
+   <tr>
+     <td width="70" align="right">&nbsp;</td>
+     <td><input name="input" type="checkbox">记住密码<a href="{$mysite}/user/forgetpass.html" class="red">找回密码？</a></td>
+   </tr>
+   <tr>
+     <td>&nbsp;</td>
+     <td><a href="javascript:;" class="btn_01 left" id="zh_login_now">立即登录</a><a href="{$mysite}/user/reg.html" class="btn_02" id="reg_now">立即注册</a></td>
+   </tr>
+   </table>
+   <!--</form>-->
+</div>
+<!--登录浮层 e-->
+<!--登录-->
+<script language="javascript">
+	$("#zh_login_now").click(function(){
+		var username = $("#zh_username").val();
+		var password = $("#zh_password").val();
+		var vcode = $("#zh_vcode").val();
+		
+		if(username==''){
+			alert("请输入用户名！");
+		}
+		else if(password==''){
+			alert("请输入密码！");
+		}
+		else if(vcode==''){
+			alert("请输入验证码！");
+		}
+		else{
+			$("#zh_login_now").html("正在登录..");
+			$("#zh_login_now").attr("disabled","true");
+			$.ajax({
+				type:"POST",
+				url:"{$mysite}/user/login2",
+				data:"username="+username+"&password="+password+"&vcode="+vcode,
+				dataType:"json",
+				success: function(data){
+					if(data.tag=="0"){
+						alert(data.msg);
+					}
+					else{
+						window.location.reload();
+					}
+				}
+			});	
+			//$("#form1").submit();
+		}
+	});
+	
+	$("#zh_login_close").click(function(){
+		$("#zh_login_1308").hide();
+		document.getElementById('ly').style.display='none';
+	});
+	
+	function zh_login_open(){
+		$("#zh_login_1308").show();
+		document.getElementById('ly').style.display="block";
+		//scroll(0,0);
+	}
+</script>
+<!--登录-->
+<footer class="in_footer">
+   <ul class="f_menu fd">
+      <li>
+
+      <a href="{$mysite}/naifen/all.html"><img src="{$public}/images/images/fimg_01_03.jpg" width="110" height="73" alt="亨氏奶粉">
+        <p>奶粉</p></a>
+      </li>
+      <li>
+         <a href="{$mysite}/fushi/all/c/21.html"><img src="{$public}/images/images/fimg_02_03.jpg" width="110" height="73" alt="亨氏米粉"> 
+        <p>米粉</p></a>
+      </li>
+      <li>
+         <a href="{$mysite}/fushi/all/c/23.html"><img src="{$public}/images/images/fimg_03_03.jpg" width="110" height="73" alt="亨氏佐餐泥"> 
+        <p>佐餐泥</p></a>
+      </li>
+      <li>
+         <a href="{$mysite}/fushi/all/c/25.html"><img src="{$public}/images/images/fimg_04_03.jpg" width="110" height="73" alt="亨氏面条"> 
+        <p>面条</p></a>
+      </li>
+      <li>
+        <a href="{$mysite}/fushi/all/c/22.html"><img src="{$public}/images/images/fimg_05_03.jpg" width="110" height="73" alt="亨氏果汁"> 
+        <p>果汁</p></a>
+      </li>
+      <li>
+         <a href="{$mysite}/fushi/all/c/24.html"><img src="{$public}/images/images/fimg_06_03.jpg" width="110" height="73" alt="亨氏营养补充品"> 
+        <p>营养补充品</p> </a>
+      </li>
+      <li>
+         <a href="{$mysite}/fushi/all/c/26.html"><img src="{$public}/images/images/fimg_07_03.jpg" width="110" height="73" alt="亨氏果汁泥"> 
+        <p>果汁泥</p> </a>
+      </li>
+      <li class="bno">
+         <a href="{$mysite}/fushi/all/c/27.html"><img src="{$public}/images/images/fimg_08_03.jpg" width="110" height="73" alt="亨氏磨牙棒"> 
+        <p>磨牙棒</p> </a>
+      </li>
+   </ul>
+   <div class="f_info">
+     <p class="left">
+          <span>&nbsp;&nbsp;COPYRIGHT &copy; 2011 HEINZ ALL RIGHT RESERVED. 粤ICP备12076909号-1</span><br />
+          <span style="font:'微软雅黑'; font-size:12px;">&nbsp;&nbsp;亨氏（中国）投资有限公司   中国广东省广州市天河区燕岭路133号</span><br />
+          <span style="font:'微软雅黑'; font-size:12px;">&nbsp;&nbsp;官网客服电话：020–38391106&nbsp;&nbsp;&nbsp;&nbsp;工作时间：周一至周五（9:00-17:30）</span><br />
+       <a href="{$mysite}">首 页</a> |  <a href="{$mysite}/about/abus.html">走进亨氏</a> |  <a href="{$mysite}/index/contactus.html">联系我们</a> |   <a href="{$mysite}/index/friendlink.html">友情链接</a> |   <a href="{$mysite}/index/sitemap.html">网站地图</a></p>
+       <div class="fs_div">
+            <a href="http://www.miibeian.gov.cn/" class="cxwz" target="_blank"></a>
+       </div>
+   </div>
+</footer>
+<!--灰色背景层-->
+<div id="ly" style="position:fixed; top:0; left:0; z-index:200000; width:100%; height:100%; background:#000; filter:alpha(opacity=70); opacity:0.7;display: none;">
+
+<!--admaster-->
+<script type="text/javascript" src="http://e.admaster.com.cn/sod/admBcnAct2.js"></script>
+<script type="text/javascript">
+var cmpnId=20000360,actInfo=(new Date()).getTime(), weight=1,tagStr=""; admBcnActGen(cmpnId,actInfo,weight,tagStr);
+</script>
+<!--iddiger 2013-04-24-->
+<script type="text/javascript">  var idgJsHost = (("https:" == document.location.protocol) ? "https" : "http");  var idgDomain = idgJsHost == "http" ? "1" : "2";   document.write(unescape("%3Cscript src='" + idgJsHost + "://" + idgDomain + ".allyes.com.cn/idigger.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {  var idgTracker = _alysP.init("idigger", "T-000386-02");  idgTracker._setTrackPath(idgJsHost + '://idigger.allyes.com/main/adftrack');  idgTracker._trackPoint();} catch(err) {}</script>
+
+<!--idmaster 2013-04-24-->
+<script type="text/javascript">
+var islogin = "{$islogin}";
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-6880001-24']);
+_gaq.push(['_setDomainName', 'heinz.com.cn']);
+if(islogin==1){
+	_gaq.push(['_setCustomVar', 1, '是否注册', 'Yes', 2]);
+	_gaq.push(['_setCustomVar', 2, '宝宝月龄', '{$admaster_age}', 2]);
+}
+else{
+	_gaq.push(['_setCustomVar', 1, '是否注册', 'No', 2]);
+}
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
